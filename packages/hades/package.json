@@ -1,0 +1,47 @@
+{
+  "description": "Typescript framework using Inversify.js and Discord.js",
+  "name": "hades",
+  "version": "0.0.3",
+  "author": "Dustin Lacewell",
+  "license": "MIT",
+  "homepage": "https://github.com/dustinlacewell/hades#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustinlacewell/hades.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dustinlacewell/hades/issues"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "engineStrict": true,
+  "engines": {
+    "npm": ">=4.0.0"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "commander": "^9.4.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.2",
+    "config": "^3.3.8",
+    "discord-command-parser": "^1.5.3",
+    "discord.js": "^14.5.0",
+    "googleapis": "^108.0.0",
+    "inversify": "^6.0.1",
+    "inversify-binding-decorators": "^4.0.0",
+    "inversify-config-injection": "github:apoptosis/inversify-config-injection",
+    "reflect-metadata": "^0.1.13"
+  }
+}

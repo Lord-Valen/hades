@@ -1,0 +1,43 @@
+{
+  "description": "Text-command extension for Hades",
+  "name": "hades-text-commands",
+  "version": "0.0.2",
+  "author": "Dustin Lacewell",
+  "license": "MIT",
+  "homepage": "https://github.com/dustinlacewell/hades#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustinlacewell/hades.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dustinlacewell/hades/issues"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "engineStrict": true,
+  "engines": {
+    "npm": ">=4.0.0"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "discord-command-parser": "^1.5.3",
+    "discord.js": "^14.5.0",
+    "inversify": "^6.0.1",
+    "inversify-binding-decorators": "^4.0.0",
+    "inversify-config-injection": "github:apoptosis/inversify-config-injection",
+    "reflect-metadata": "^0.1.13"
+  }
+}

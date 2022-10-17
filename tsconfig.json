@@ -1,35 +1,11 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "esModuleInterop": true,
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "outDir": "dist/",
-        "skipLibCheck": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "allowSyntheticDefaultImports": true,
-        "resolveJsonModule": true,
-        "lib": [
-            "dom",
-            "es5",
-            "es6"
-        ],
-        "types": [
-            "node",
-            "reflect-metadata"
-        ],
-        "typeRoots": [
-            "node_modules/@types"
-        ]
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/hades/tsconfig.ref.json"
     },
-    "include": [
-        "src/**/*.ts"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+    {
+      "path": "./packages/hades-text-commands/tsconfig.ref.json"
+    }
+  ]
 }
